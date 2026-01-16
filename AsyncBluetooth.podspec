@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = '7.0'
   
   # Swift 版本
-  s.swift_version = '6.0'  # SPM 使用 swift-tools-version:6.0 但支持 Swift 5
+  s.swift_version = '5.0'  # SPM 使用 swift-tools-version:6.0 但支持 Swift 5
   
   # 源文件
   s.source_files = 'Sources/**/*.{swift,m,h}'
