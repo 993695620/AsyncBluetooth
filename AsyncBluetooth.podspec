@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.watchos.deployment_target = '7.0'
   
   # Swift 版本
-  s.swift_version = '6.0'  # SPM 使用 swift-tools-version:6.0 但支持 Swift 5
+  s.swift_version = '5.5'  # SPM 使用 swift-tools-version:6.0 但支持 Swift 5
   
   # 源文件
   s.source_files = 'Sources/**/*.{swift,m,h}'
@@ -43,9 +43,9 @@ Pod::Spec.new do |s|
   
   # 如果需要额外的编译设置
   s.pod_target_xcconfig = {
-    'SWIFT_VERSION' => '6.0',
+    'SWIFT_VERSION' => '5.5',
     'APPLICATION_EXTENSION_API_ONLY' => 'YES',  # 如果支持扩展
     #'OTHER_SWIFT_FLAGS' => '$(inherited) -enable-experimental-concurrency'
-    'OTHER_SWIFT_FLAGS' => '$(inherited) -Xfrontend -strict-concurrency=complete'
+    'OTHER_SWIFT_FLAGS' => '$(inherited) -Xfrontend -enable-experimental-concurrency'
   }
 end
